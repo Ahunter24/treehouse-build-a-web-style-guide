@@ -7,3 +7,26 @@
 
 
 
+.btn {
+
+    @include m(default) {
+        @include flex(flex, column);
+    }
+    
+    @include m(success) {
+        @include flex(flex, column);
+    }
+
+    @include m(error) {
+        @include flex(flex, column);
+    }
+
+    @include m(warning) {
+        @include flex(flex, column);
+    }
+
+    @include m(info) {
+        @include flex(flex, column);
+    }
+
+}

@@ -9,11 +9,8 @@
 
 // FONT STACKS
 
-
-
 $font-url        :  "https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900";
 $stack-lato      :  'Lato', sans-serif;
-
 
 // FONT WEIGHT
 
@@ -81,10 +78,18 @@ $ui-colors: (
     default    : $spray,
 );
 
-
 // ===============================================
 // =================BREAKPOINTS===================
 
-$breakpt-sm: 1px;
-$breakpt-md: 768px;
-$breakpt-lg: 1100px;
+$brk-narrow   :  "(max-width: 768px)";
+$brk-wide     :  "(max-width: 1024px)";
+
+
+// @media #{$brk-narrow} {
+
+// }
+
+// ===============================================
+// =================IMG PATHS=====================
+
+$path-img   :  '../images';

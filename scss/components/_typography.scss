@@ -11,7 +11,7 @@
 
 .container {
     @extend %margin-auto;
-    @extend %centered;
+    width: 85%;
 }
 
 

@@ -4,12 +4,15 @@
 
 
 
-.img {
+.img { 
+
     @include m(logo) {
-        margin: px(40px , 16px)  0  px(20px, 16px);
+        margin: px(40px , 16px)  0  px(35px, 16px);
     }
 
     @include m(frame) {
-        width: 75%;
+        width: 100%;
+        padding: px(10px);
+        border: solid 1px palette(grey, x-light);
     }
 }
