@@ -1,0 +1,47 @@
+// links
+// images
+// headlines
+// nav items
+// placeholder with extends
+
+
+// =============== Headlines ======================//
+
+
+// .headline {
+// 	&--primary {
+// 		@extend %hdln-prim;
+
+// 	}
+// 	&--secondary {
+// 		@extend %hdln-sec;
+// 	}
+// }
+
+
+
+
+
+// =============== HELPERS ======================//
+
+//Centered
+%centered {
+    text-align: center;
+}
+
+//Remove underline from links
+%text-dec-none {
+    text-decoration: none;
+}
+
+//Margin auto 
+%margin-auto {
+    margin: 0 auto;
+}
+
+//Nav padding and margin
+%nav-padding-margin {
+    margin: 0.75em 0;
+    padding: 0.75em 0;
+}
+

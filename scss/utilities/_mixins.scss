@@ -1,0 +1,48 @@
+// media queries
+// flexbox settings
+// element and modifier bem selectors
+
+
+
+
+//BEM MIXIN//
+
+@mixin e($element) {
+    &__#{$element} {
+        @content;
+    }
+}
+
+@mixin m($modifier) {
+    &--#{$modifier} {
+        @content;
+    }
+}
+
+
+//FLEX MIXIN
+
+@mixin flex ($display: flex, $dir: null, $wrap: null, $just: null){
+    display: $display;
+    flex-direction: $dir;
+    flex-wrap: $wrap;
+    justify-content: $just;
+}
+
+
+//MEDIA QUERY MIXIN
+
+// @mixin mq($break) {
+//     @if ($break =="small"){
+//         @media 
+//     } 
+//     @else if ($break == "medium") {
+//         @media
+//     }
+//     @else if ($break == "large"){
+//         @media
+//     }
+//     @else {
+//         @error "That is not an valid entry for media queries"
+//     }
+// }

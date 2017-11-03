@@ -1,0 +1,26 @@
+// .container
+// .link
+// .blockquote
+// .headline--primary
+// .headline--secondary
+
+
+@if variable-exists(font-url) {
+    @import url($font-url);
+  }
+
+.container {
+    @extend %margin-auto;
+    @extend %centered;
+}
+
+
+
+.headline {
+    @include m(primary) {
+
+    }
+    @include m(secondary){
+        
+    }
+}

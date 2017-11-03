@@ -1,0 +1,15 @@
+// .img--logo
+// .img--frame
+// .img--avatar
+
+
+
+.img {
+    @include m(logo) {
+        margin: px(40px , 16px)  0  px(20px, 16px);
+    }
+
+    @include m(frame) {
+        width: 75%;
+    }
+}
