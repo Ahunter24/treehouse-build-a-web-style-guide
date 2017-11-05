@@ -15,6 +15,15 @@
 // .theme__colors
 
 
+@for $i from 1 to $g-col-count + 1{
+    .grid__col--#{$i}.theme__colors{
+        @extend %grid-styles;
+    }
+}
+
+.grid__col {
+    @include grid-background-color;
+}
 
 @media (min-width: 768px) {
     @for $i from 1 to $g-col-count {
@@ -27,6 +36,16 @@
         }
     }
 }
+
+.grid__row {
+    .theme__colors {
+        margin-bottom: px(5px);
+        &:last-child {
+            margin-bottom: px(40px);            
+        }
+    }
+}
+
 
 
 

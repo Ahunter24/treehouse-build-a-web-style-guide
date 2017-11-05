@@ -24,22 +24,17 @@
     text-transform: uppercase;
 }
 
-// =============== Headlines ======================//
+// ===============Grid======================//
 
-
-// .headline {
-// 	&--primary {
-// 		@extend %hdln-prim;
-
-// 	}
-// 	&--secondary {
-// 		@extend %hdln-sec;
-// 	}
-// }
-
-
-
-
+%grid-styles {
+    width: 100%;
+    padding: 0.95em 0 0.95em px(15px);
+    font-family: $stack-lato;
+    border: none;
+    border-radius: 5px;
+    color: $grey;
+    font-weight: $font-wt-bold;
+}
 
 // =============== HELPERS ======================//
 

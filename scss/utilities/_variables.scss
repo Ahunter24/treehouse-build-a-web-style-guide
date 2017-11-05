@@ -49,6 +49,23 @@ $apple         :#51BA4F;  //gril__col--5
 $sunglo        :#DF6F6D;  //grid__col--7
 $apricot       :#E59061;  //grid__col--8
 
+$grid-colors: (
+    $emerald,   //grid__col--1 (placeholder color)
+    $java,      //grid__col--2 (placeholder color)
+    $perfume,   //grid__col--3
+    $malibu,    //grid__col--4
+    $apple,     //grid__col--5
+    $matisse,   //grid__col--6
+    $sunglo,    //grid__col--7
+    $apricot,   //grid__col--8
+    $flamingo,  //grid__col--9  (placeholder color)
+    $roman,     //grid__col--10 (placeholder color)
+    $studio,    //grid__col--11 (placeholder color)
+    $magic-ment //grid__col--12
+);
+
+
+
 
 // BASE COLORS
 $primary-color     : $java;

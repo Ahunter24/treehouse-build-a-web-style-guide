@@ -34,7 +34,7 @@
     }
 
     @each $theme, $color in $ui-colors {
-        &--#{$theme} {
+        &--#{$theme}.theme__colors {
             background: $color;
         }
     }

@@ -14,13 +14,13 @@
 
     @include m(frame) {
         width: 100%;
-        padding: px(10px);
+        padding: px(15px);
         border: solid 1px palette(grey, x-light);
     }
 
     @include m(avatar) {
         @extend %margin-auto;
         display: block;
-        padding: px(10px) 0;
+        padding: px(25px) 0;
     }
 }

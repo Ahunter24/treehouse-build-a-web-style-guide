@@ -413,6 +413,15 @@ p {
   color: #FFF;
   text-transform: uppercase; }
 
+.grid__col--1.theme__colors, .grid__col--2.theme__colors, .grid__col--3.theme__colors, .grid__col--4.theme__colors, .grid__col--5.theme__colors, .grid__col--6.theme__colors, .grid__col--7.theme__colors, .grid__col--8.theme__colors, .grid__col--9.theme__colors, .grid__col--10.theme__colors, .grid__col--11.theme__colors, .grid__col--12.theme__colors {
+  width: 100%;
+  padding: 0.95em 0 0.95em 0.9375em;
+  font-family: "Lato", sans-serif;
+  border: none;
+  border-radius: 5px;
+  color: #808080;
+  font-weight: 700; }
+
 .nav {
   text-align: center; }
 
@@ -454,7 +463,6 @@ p {
   font-weight: 300;
   padding: 0.9375em;
   margin-bottom: 0;
-  margin-top: 2.8125em;
   color: #808080; }
 
 .card p {
@@ -481,11 +489,11 @@ p {
   padding: 2.5em 0; }
 .img--frame {
   width: 100%;
-  padding: 0.625em;
+  padding: 0.9375em;
   border: solid 1px #d9d9d9; }
 .img--avatar {
   display: block;
-  padding: 0.625em 0; }
+  padding: 1.5625em 0; }
 
 .form__label {
   display: block;
@@ -528,16 +536,41 @@ p {
   flex-direction: column;
   align-items: center;
   margin-bottom: 1.25em; }
-.btn--success {
+.btn--success.theme__colors {
   background: #50C878; }
-.btn--error {
+.btn--error.theme__colors {
   background: #DA5652; }
-.btn--warning {
+.btn--warning.theme__colors {
   background: #F4621A; }
-.btn--info {
+.btn--info.theme__colors {
   background: #8451A9; }
-.btn--default {
+.btn--default.theme__colors {
   background: #3DDBDB; }
+
+.grid__col--1.theme__colors {
+  background-color: #50C878; }
+.grid__col--2.theme__colors {
+  background-color: #28DCB8; }
+.grid__col--3.theme__colors {
+  background-color: #D3A2F6; }
+.grid__col--4.theme__colors {
+  background-color: #56DEF5; }
+.grid__col--5.theme__colors {
+  background-color: #51BA4F; }
+.grid__col--6.theme__colors {
+  background-color: #146FA3; }
+.grid__col--7.theme__colors {
+  background-color: #DF6F6D; }
+.grid__col--8.theme__colors {
+  background-color: #E59061; }
+.grid__col--9.theme__colors {
+  background-color: #F4621A; }
+.grid__col--10.theme__colors {
+  background-color: #DA5652; }
+.grid__col--11.theme__colors {
+  background-color: #8451A9; }
+.grid__col--12.theme__colors {
+  background-color: #8FF0CB; }
 
 @media (min-width: 768px) {
   .grid__col--1 {
@@ -572,5 +605,9 @@ p {
 
   .grid__col--11 {
     width: 91.5%; } }
+.grid__row .theme__colors {
+  margin-bottom: 0.3125em; }
+  .grid__row .theme__colors:last-child {
+    margin-bottom: 2.5em; }
 
 /*# sourceMappingURL=styles.css.map */

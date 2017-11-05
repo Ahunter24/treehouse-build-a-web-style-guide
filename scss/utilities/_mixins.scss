@@ -31,6 +31,18 @@
     margin-bottom: px(20px);
 }
 
+//GRID COLOR MIXIN
+
+@mixin grid-background-color {
+    @each $color in $grid-colors {
+        $index: index($grid-colors, $color);
+
+        &--#{$index}.theme__colors {
+            background-color: $color;
+        }
+    }
+}
+
 
 //MEDIA QUERY MIXIN
 
