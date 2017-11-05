@@ -15,11 +15,6 @@
 // .theme__colors
 
 
-// .grid{
-//     @include e(row){
-//         @extend %centered;
-//     } 
-// }
 
 @media (min-width: 768px) {
     @for $i from 1 to $g-col-count {

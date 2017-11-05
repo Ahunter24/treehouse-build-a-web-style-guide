@@ -19,18 +19,28 @@
     @include m(primary) {
         color: $primary-color;
         font-weight: $font-wt-bolder;
+        width: 75%;
+        margin-top: 0;
+        margin-bottom: px(15px);
+        padding-left: px(15px);
         
     }
     @include m(secondary){
+        font-size: px(20px);
         font-weight: $font-wt-light;
-        margin-top: px(80px);
+        padding: 0.9375em;
+        margin-bottom: 0;
+        margin-top: px(45px);
+        color: $grey;
     }
 }
 
 .card {
     p {
         @extend %margin-auto;
-        width: 90%;
+        @extend %card-padding;
+        font-size: px(19px);
+        color: palette(grey);
     }
 }
 
@@ -47,6 +57,6 @@
     padding-left: px(15px);
     margin-right: px(15px);
     font-style: italic;
-    font-size: px(20px);
+    font-size: px(25px);
     color: $grey;
 }
