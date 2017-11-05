@@ -36,8 +36,8 @@ $black         :#181616;
 // THEME COLORS
 
 $emerald       :#50C878;  //success btn
-$shakespeare   :#50CEC9;  //typography btn
-$spray         :#62D8EF;  //login btn & default btn
+$java          :#28DCB8;  //typography btn
+$spray         :#3DDBDB;  //login btn & default btn
 $flamingo      :#F4621A;  //warning btn
 $roman         :#DA5652;  //error btn
 $studio        :#8451A9;  //info btn
@@ -51,7 +51,7 @@ $apricot       :#E59061;  //grid__col--8
 
 
 // BASE COLORS
-$primary-color     : $shakespeare;
+$primary-color     : $java;
 $secondary-color   : $spray; 
 
 
@@ -93,3 +93,11 @@ $brk-wide     :  "(max-width: 1024px)";
 // =================IMG PATHS=====================
 
 $path-img   :  '../images';
+
+// ===============================================
+// =================GRID==========================
+
+$g-col-width    : 65px; 
+$g-gutter-width : 20px;  
+$g-col-count    : 12;  
+$g-cont-max-w   : 1050px; 

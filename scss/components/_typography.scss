@@ -11,16 +11,42 @@
 
 .container {
     @extend %margin-auto;
+    font-family: $stack-lato;
     width: 85%;
 }
 
-
-
 .headline {
     @include m(primary) {
-
-    }
-    @include m(secondary){
+        color: $primary-color;
+        font-weight: $font-wt-bolder;
         
     }
+    @include m(secondary){
+        font-weight: $font-wt-light;
+        margin-top: px(80px);
+    }
+}
+
+.card {
+    p {
+        @extend %margin-auto;
+        width: 90%;
+    }
+}
+
+.link {
+    color: $secondary-color;
+    font-weight: $font-wt-bolder;
+    text-decoration: none;
+}
+
+.blockquote {
+    border-left: px(6px) solid $primary-color;
+    border-top-left-radius: px(5px);
+    border-bottom-left-radius: px(5px);
+    padding-left: px(15px);
+    margin-right: px(15px);
+    font-style: italic;
+    font-size: px(20px);
+    color: $grey;
 }

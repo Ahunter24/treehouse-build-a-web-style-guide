@@ -14,22 +14,22 @@
 
         
 //     }
-//     @include e(input) {
-//         width: 100%;
-//         font-size: em(18px);
-//         padding: em(15px 18px);
-//         margin-bottom: em(20px, 18px);
-//         border-bottom: 6px solid palette(grey, x-light);
-//         border-radius: $br--default;
-//         background-color: palette(grey, xx-light);
-//         color: palette(black, dark);
-//         font-weight: $font-wight--light;
-
-//         &:focus {
-//             border-color: $color-primary;
-//         }
-//     }
-
+.form{
+    @include e(input) {
+        width: 100%;
+        font-size: px(18px);
+        padding: px(15px);
+        margin-bottom: px(20px);
+        border: none;
+        border-bottom: 6px solid $primary-color;
+        color: $black;
+        font-weight: $font-wt-light;   
+        placeholder {
+            color: palette (grey, darker);
+            font-weight: $font-wt-bolder;
+        }
+    }
+}
 //     @include e(btn) {
 //         @extend %btn;
 //         background-color: $color-primary;

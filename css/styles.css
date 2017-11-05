@@ -397,7 +397,8 @@ ul {
   list-style-type: none; }
 
 p {
-  line-height: 20px; }
+  line-height: 20px;
+  font-size: 14px; }
 
 .nav {
   text-align: center; }
@@ -405,26 +406,51 @@ p {
 .nav__item a {
   text-decoration: none; }
 
-.container {
+.container, .card p {
   margin: 0 auto; }
 
 .nav {
-  padding: 0 0 2.5em;
+  padding: 0 0 4.375em;
   margin: 0; }
   .nav__item {
     border-radius: 5px;
     padding: 0.75em 0; }
     .nav__item a {
-      font-family: "Lato", sans-serif;
       color: black; }
     .nav__item:first-child {
-      background-color: #50CEC9; }
+      background-color: #28DCB8; }
       .nav__item:first-child a {
         color: #FFF;
         font-weight: 300; }
 
 .container {
+  font-family: "Lato", sans-serif;
   width: 85%; }
+
+.headline--primary {
+  color: #28DCB8;
+  font-weight: 900; }
+.headline--secondary {
+  font-weight: 300;
+  margin-top: 5em; }
+
+.card p {
+  width: 90%; }
+
+.link {
+  color: #3DDBDB;
+  font-weight: 900;
+  text-decoration: none; }
+
+.blockquote {
+  border-left: 0.375em solid #28DCB8;
+  border-top-left-radius: 0.3125em;
+  border-bottom-left-radius: 0.3125em;
+  padding-left: 0.9375em;
+  margin-right: 0.9375em;
+  font-style: italic;
+  font-size: 1.25em;
+  color: #808080; }
 
 .img--logo {
   margin: 2.5em 0 2.1875em; }
@@ -432,6 +458,19 @@ p {
   width: 100%;
   padding: 0.625em;
   border: solid 1px #d9d9d9; }
+
+.form__input {
+  width: 100%;
+  font-size: 1.125em;
+  padding: 0.9375em;
+  margin-bottom: 1.25em;
+  border: none;
+  border-bottom: 6px solid #28DCB8;
+  color: #181616;
+  font-weight: 300; }
+  .form__input placeholder {
+    color: palette grey, darker;
+    font-weight: 900; }
 
 .btn--default {
   display: flex;
@@ -448,5 +487,39 @@ p {
 .btn--info {
   display: flex;
   flex-direction: column; }
+
+@media (min-width: 768px) {
+  .grid__col--1 {
+    width: 6.5%; }
+
+  .grid__col--2 {
+    width: 15%; }
+
+  .grid__col--3 {
+    width: 23.5%; }
+
+  .grid__col--4 {
+    width: 32%; }
+
+  .grid__col--5 {
+    width: 40.5%; }
+
+  .grid__col--6 {
+    width: 49%; }
+
+  .grid__col--7 {
+    width: 57.5%; }
+
+  .grid__col--8 {
+    width: 66%; }
+
+  .grid__col--9 {
+    width: 74.5%; }
+
+  .grid__col--10 {
+    width: 83%; }
+
+  .grid__col--11 {
+    width: 91.5%; } }
 
 /*# sourceMappingURL=styles.css.map */
