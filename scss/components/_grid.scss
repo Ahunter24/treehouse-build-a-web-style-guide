@@ -1,24 +1,11 @@
-// .container
-// .grid__row
-// .grid__col--2
-// .grid__col--3
-// .grid__col--4
-// .grid__col--5
-// .grid__col--6
-// .grid__col--7
-// .grid__col--8
-// .grid__col--9
-// .grid__col--10
-// .grid__col--11
-// .grid__col--12
-// .centered
-// .theme__colors
-
 
 @for $i from 1 to $g-col-count + 1{
     .grid__col--#{$i}.theme__colors{
         @extend %grid-styles;
-        margin: 0 5px 50px;
+        margin: 0 px(5px) px(50px);
+        &:last-of-type {
+            margin-bottom: px(50px);
+        }
 
         //margin for grid system
         @include mq(small) {
@@ -52,11 +39,19 @@
     @include mq(medium) {
         @include e(row) {
             display: flex;
+            justify-content: space-between;
 
             .centered {
                 display: block;
                 margin: auto;
             }
+        }
+        &__col--12 {
+            .theme__colors {
+                margin: 1.875em 1em;
+            }
+
+            display: flex;
         }
     }
 
