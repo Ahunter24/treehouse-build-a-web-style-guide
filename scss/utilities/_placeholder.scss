@@ -18,6 +18,10 @@
     border-radius: 5px;
     color: $white;
     text-transform: uppercase;
+    @include flex(flex, column) {
+        align-items: center;
+        margin-bottom: px(20px);
+    }
 }
 
 // ===============Grid======================//

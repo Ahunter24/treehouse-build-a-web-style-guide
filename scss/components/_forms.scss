@@ -4,9 +4,8 @@
         @include m(hidden) {
             @extend %srt;
         }
-        display: block;
-        margin-bottom: em(10px);
     }
+    
     @include e(input) {
         width: 85%;
         color: $grey;

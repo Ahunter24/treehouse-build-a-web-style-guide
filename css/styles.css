@@ -403,7 +403,7 @@ p {
 .form__label--hidden {
   visibility: hidden; }
 
-.btn--default, .btn--success, .btn--error, .btn--warning, .btn--info {
+[class^="btn--"] {
   width: 100%;
   padding: 0.75em 0;
   font-family: "Lato", sans-serif;
@@ -411,7 +411,11 @@ p {
   border: none;
   border-radius: 5px;
   color: #FFF;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.25em; }
 
 .grid__col--1.theme__colors, .grid__col--2.theme__colors, .grid__col--3.theme__colors, .grid__col--4.theme__colors, .grid__col--5.theme__colors, .grid__col--6.theme__colors, .grid__col--7.theme__colors, .grid__col--8.theme__colors, .grid__col--9.theme__colors, .grid__col--10.theme__colors, .grid__col--11.theme__colors, .grid__col--12.theme__colors {
   padding: 0.95em 0 0.95em 0.9375em;
@@ -441,8 +445,6 @@ p {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-      align-items: center;
-      margin-bottom: 1.25em;
       width: 60%;
       margin: 4.0625em 0 0 12.5em; } }
   .nav__item {
@@ -506,9 +508,6 @@ p {
   display: block;
   padding: 1.5625em 0; }
 
-.form__label {
-  display: block;
-  margin-bottom: em(10px); }
 .form__input {
   width: 85%;
   color: #808080;
@@ -522,31 +521,7 @@ p {
     background-color: #28DCB8; }
 
 .btn--default {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 1.25em;
   margin-top: 1.875em; }
-.btn--success {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 1.25em; }
-.btn--error {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 1.25em; }
-.btn--warning {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 1.25em; }
-.btn--info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 1.25em; }
 .btn--success.theme__colors {
   background: #50C878; }
 .btn--error.theme__colors {
@@ -564,8 +539,7 @@ p {
     margin-bottom: 3.125em; }
   @media (min-width: 1px) and (max-width: 768px) {
     .grid__col--1.theme__colors {
-      margin-bottom: 0.3125em;
-      margin-right: 0.9375em; }
+      margin-bottom: 0.3125em; }
       .grid__col--1.theme__colors:last-child {
         margin-bottom: 2.5em; } }
 
@@ -575,8 +549,7 @@ p {
     margin-bottom: 3.125em; }
   @media (min-width: 1px) and (max-width: 768px) {
     .grid__col--2.theme__colors {
-      margin-bottom: 0.3125em;
-      margin-right: 0.9375em; }
+      margin-bottom: 0.3125em; }
       .grid__col--2.theme__colors:last-child {
         margin-bottom: 2.5em; } }
 
@@ -586,8 +559,7 @@ p {
     margin-bottom: 3.125em; }
   @media (min-width: 1px) and (max-width: 768px) {
     .grid__col--3.theme__colors {
-      margin-bottom: 0.3125em;
-      margin-right: 0.9375em; }
+      margin-bottom: 0.3125em; }
       .grid__col--3.theme__colors:last-child {
         margin-bottom: 2.5em; } }
 
@@ -597,8 +569,7 @@ p {
     margin-bottom: 3.125em; }
   @media (min-width: 1px) and (max-width: 768px) {
     .grid__col--4.theme__colors {
-      margin-bottom: 0.3125em;
-      margin-right: 0.9375em; }
+      margin-bottom: 0.3125em; }
       .grid__col--4.theme__colors:last-child {
         margin-bottom: 2.5em; } }
 
@@ -608,8 +579,7 @@ p {
     margin-bottom: 3.125em; }
   @media (min-width: 1px) and (max-width: 768px) {
     .grid__col--5.theme__colors {
-      margin-bottom: 0.3125em;
-      margin-right: 0.9375em; }
+      margin-bottom: 0.3125em; }
       .grid__col--5.theme__colors:last-child {
         margin-bottom: 2.5em; } }
 
@@ -619,8 +589,7 @@ p {
     margin-bottom: 3.125em; }
   @media (min-width: 1px) and (max-width: 768px) {
     .grid__col--6.theme__colors {
-      margin-bottom: 0.3125em;
-      margin-right: 0.9375em; }
+      margin-bottom: 0.3125em; }
       .grid__col--6.theme__colors:last-child {
         margin-bottom: 2.5em; } }
 
@@ -630,8 +599,7 @@ p {
     margin-bottom: 3.125em; }
   @media (min-width: 1px) and (max-width: 768px) {
     .grid__col--7.theme__colors {
-      margin-bottom: 0.3125em;
-      margin-right: 0.9375em; }
+      margin-bottom: 0.3125em; }
       .grid__col--7.theme__colors:last-child {
         margin-bottom: 2.5em; } }
 
@@ -641,8 +609,7 @@ p {
     margin-bottom: 3.125em; }
   @media (min-width: 1px) and (max-width: 768px) {
     .grid__col--8.theme__colors {
-      margin-bottom: 0.3125em;
-      margin-right: 0.9375em; }
+      margin-bottom: 0.3125em; }
       .grid__col--8.theme__colors:last-child {
         margin-bottom: 2.5em; } }
 
@@ -652,8 +619,7 @@ p {
     margin-bottom: 3.125em; }
   @media (min-width: 1px) and (max-width: 768px) {
     .grid__col--9.theme__colors {
-      margin-bottom: 0.3125em;
-      margin-right: 0.9375em; }
+      margin-bottom: 0.3125em; }
       .grid__col--9.theme__colors:last-child {
         margin-bottom: 2.5em; } }
 
@@ -663,8 +629,7 @@ p {
     margin-bottom: 3.125em; }
   @media (min-width: 1px) and (max-width: 768px) {
     .grid__col--10.theme__colors {
-      margin-bottom: 0.3125em;
-      margin-right: 0.9375em; }
+      margin-bottom: 0.3125em; }
       .grid__col--10.theme__colors:last-child {
         margin-bottom: 2.5em; } }
 
@@ -674,8 +639,7 @@ p {
     margin-bottom: 3.125em; }
   @media (min-width: 1px) and (max-width: 768px) {
     .grid__col--11.theme__colors {
-      margin-bottom: 0.3125em;
-      margin-right: 0.9375em; }
+      margin-bottom: 0.3125em; }
       .grid__col--11.theme__colors:last-child {
         margin-bottom: 2.5em; } }
 
@@ -685,8 +649,7 @@ p {
     margin-bottom: 3.125em; }
   @media (min-width: 1px) and (max-width: 768px) {
     .grid__col--12.theme__colors {
-      margin-bottom: 0.3125em;
-      margin-right: 0.9375em; }
+      margin-bottom: 0.3125em; }
       .grid__col--12.theme__colors:last-child {
         margin-bottom: 2.5em; } }
 
@@ -732,11 +695,7 @@ p {
     justify-content: space-between; }
     .grid__row .centered {
       display: block;
-      margin: auto; }
-  .grid__col--12 {
-    display: flex; }
-    .grid__col--12 .theme__colors {
-      margin: 1.875em 1em; } }
+      margin: auto; } }
 .grid__col--1.theme__colors {
   background-color: #50C878; }
 .grid__col--2.theme__colors {
@@ -761,5 +720,11 @@ p {
   background-color: #8451A9; }
 .grid__col--12.theme__colors {
   background-color: #8FF0CB; }
+
+@media (min-width: 768px) {
+  .grid__col--12 {
+    display: flex; }
+    .grid__col--12 .theme__colors {
+      margin: 1.875em 1em; } }
 
 /*# sourceMappingURL=styles.css.map */

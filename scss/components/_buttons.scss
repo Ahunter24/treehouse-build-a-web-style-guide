@@ -1,31 +1,9 @@
 
 .btn {
     @include m(default) {
-        @include flex(flex, column);
-        @extend %btn;
         margin-top: px(30px);
     }
     
-    @include m(success) {
-        @include flex(flex, column);
-        @extend %btn;
-    }
-
-    @include m(error) {
-        @include flex(flex, column);
-        @extend %btn;
-    }
-
-    @include m(warning) {
-        @include flex(flex, column);
-        @extend %btn;
-    }
-
-    @include m(info) {
-        @include flex(flex, column);
-        @extend %btn;
-    }
-
     @each $theme, $color in $ui-colors {
         &--#{$theme}.theme__colors {
             background: $color;
@@ -33,3 +11,6 @@
     }
 }
 
+[class^="btn--"] {
+     @extend %btn;  
+    }

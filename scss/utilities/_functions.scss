@@ -6,6 +6,7 @@
     @return ($target / $context) * 1em;
 }
 
+//function for percentage
 @function percentage($target, $context) {
     @return ($target / $context) * 100%;
 }
