@@ -22,8 +22,5 @@
         @extend %margin-auto;
         display: block;
         padding: px(25px) 0;
-        @include mq(medium) {
-            padding: 0;
-        }
     }
 }
