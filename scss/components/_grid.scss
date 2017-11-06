@@ -18,14 +18,23 @@
 @for $i from 1 to $g-col-count + 1{
     .grid__col--#{$i}.theme__colors{
         @extend %grid-styles;
+
+        //margin for grid system
+        margin-bottom: px(5px);
+        &:last-child {  
+            margin-bottom: px(40px);            
+        }
     }
 }
 
+//background color for each grid__col in grid system
 .grid__col {
     @include grid-background-color;
 }
 
-@media (min-width: 768px) {
+
+//grid max-width
+@include mq(medium) {
     @for $i from 1 to $g-col-count {
 
     $context: g-context($g-col-width, $g-col-count, $g-gutter-width);
@@ -37,15 +46,15 @@
     }
 }
 
-.grid__row {
-    .theme__colors {
-        margin-bottom: px(5px);
-        &:last-child {
-            margin-bottom: px(40px);            
+
+//flex for grids
+
+.grid {
+    @include mq(medium) {
+        @include e(row) {
+            display: flex;
         }
     }
 }
-
-
 
 

@@ -31,6 +31,9 @@
         padding: 0.9375em;
         margin-bottom: 0;
         color: $grey;
+        @include mq(medium) {
+            margin-top: 0;
+        }
     }
 }
 
@@ -38,7 +41,7 @@
     p {
         @extend %margin-auto;
         @extend %card-padding;
-        font-size: px(19px);
+        font-size: px(18px);
         color: palette(grey);
     }
 }
